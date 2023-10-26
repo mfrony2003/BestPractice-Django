@@ -50,7 +50,7 @@ LOCAL_DATABASES_NAME =   "db.sqlite3"
 Note the `(venv)` in front of the prompt. This indicates that this terminal
 session operates in a virtual environment .
 
-
+![config](https://github.com/mfrony2003/BestPractice-Django/assets/26355258/7219e928-fe3c-4368-a8d3-e29614258407)
 
 ```sh
 (venv)>py manage.py runserver 
