@@ -5,9 +5,9 @@
 The first thing to do is to clone the repository:
 
 ```sh
-mkdir my_projject
-cd my_projject
-git pull https://github.com/mfrony2003/djangoBestPractice.git
+mkdir my_project
+cd my_project
+git pull https://github.com/mfrony2003/BestPractice-Django.git
 
 ```
 
@@ -22,6 +22,11 @@ Then install the dependencies:
 
 ```sh
 (venv)$ pip install -r requirements.txt
+
+```
+Then create .env file  :
+
+```sh
 cd config/configSettings
 nul > .env [for windown]
 touch .env [for linux ]
@@ -42,7 +47,7 @@ LOCAL_DATABASES_NAME =   "db.sqlite3"
 Note the `(venv)` in front of the prompt. This indicates that this terminal
 session operates in a virtual environment .
 
-Once `pip` has finished downloading the dependencies:
+
 
 ```sh
 (venv)>py manage.py runserver 
