@@ -1,7 +1,15 @@
 {% extends 'questionTemplate/base.html' %}
 {% block body %}
-<div class="container">
-<h1>{{context.question.question}}</h1>
-<h1>{{context.answer.answer}}</h1>
-</div>
+ <div class="container">
+
+          <h1 class="display-3">Question : {{context.question.question}}</h1>
+          <h1 class="display-2">Answer  :  {{context.answer.answer}}</h1>
+          <p><a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/faisalrony/" role="button">Follow on linkedin </a></p>
+
+          
+        </div>
+        <div class="container">
+        <p>Change .env Settings youw will find different result</p>
+        </div>
+
 {% endblock %}
