@@ -7,6 +7,7 @@ The first thing to do is to clone the repository:
 ```sh
 mkdir my_project
 cd my_project
+git init
 git pull https://github.com/mfrony2003/BestPractice-Django.git
 
 ```
@@ -21,7 +22,7 @@ venv\Scripts\activate.bat
 Then install the dependencies:
 
 ```sh
-(venv)$ pip install -r requirements.txt
+(venv)$ **pip install -r requirements.txt**
 
 ```
 Then create .env file  :
@@ -54,7 +55,8 @@ session operates in a virtual environment .
 
 
 ```sh
-(venv)>py manage.py runserver 
+ cd /my_project 
+ py manage.py runserver 
 ```
 And navigate to `http://127.0.0.1:8000/` or 'http://localhost:8000/'
 
