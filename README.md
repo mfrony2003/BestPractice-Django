@@ -30,8 +30,11 @@ Then create .env file  :
 cd config/configSettings
 nul > .env [for windown]
 touch .env [for linux ]
+```
+
 paste the code in the env file
 
+```sh
 SECRET_KEY = 'django-insecure-%_poyt*ry%pbv%hq7a2m1=q0j8pvsue_rk9%mui0nj&6*0jobc'
 
 DEBUG=False
