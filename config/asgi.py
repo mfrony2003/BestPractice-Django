@@ -11,6 +11,20 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.configSettings.basesettings')
+
+from os.path import join, dirname
+from dotenv import load_dotenv
+
+
+dotenv_path = join(dirname(__file__),'configSettings','.env')
+load_dotenv(dotenv_path)
+
+from django.core.wsgi import get_wsgi_application
+
+if os.environ.get("DEBUG")=="True":
+      os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.configSettings.localSettings')
+else:
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.configSettings.prodSettings')
+
 
 application = get_asgi_application()
