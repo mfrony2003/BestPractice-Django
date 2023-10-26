@@ -6,6 +6,7 @@ __pycache__
 media
 apps/polls/migrations/0001_initial.py
 venv/
+.env
 
 # Backup files # 
 *.bak 
